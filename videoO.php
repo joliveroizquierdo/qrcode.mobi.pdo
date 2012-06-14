@@ -2,7 +2,7 @@
 require_once 'class/config.php';
 $config=new Config();
 $id=strip_tags($_GET['id']);
-$departamentos=$config->getDepartamentosPorId($id);
+$dependencias=$config->getDependenciasPorId($id);
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -23,9 +23,9 @@ $departamentos=$config->getDepartamentosPorId($id);
 				<h2>Recorrido</h2>
 			 </header>
 			 <div data-role="content">
-				 <?php foreach($departamentos as $dep):?>
-					<?php //echo $dep['video'];?></p>
-				 <?php endforeach;?>
+				 <?php foreach($dependencias as $o):?>
+					<iframe width="560" height="315" src="<?php echo $o['video2'];?>" frameborder="0" allowfullscreen></iframe>
+			   <?php endforeach;?>
 				 <a href="#" data-role="button"  data-theme="b" data-rel="back">Cancelar</a>
 		     </div>
         </div>

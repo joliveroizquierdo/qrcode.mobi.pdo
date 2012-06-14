@@ -2,7 +2,7 @@
 require_once 'class/config.php';
 $config=new Config();
 $id=strip_tags($_GET['id']);
-$laboratorios=$config->getLaboratoriosPorId($id);
+$departamentos=$config->getDepartamentosPorId($id);
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -23,9 +23,10 @@ $laboratorios=$config->getLaboratoriosPorId($id);
 				<h2>Recorrido</h2>
 			 </header>
 			 <div data-role="content">
-				 <?php foreach($laboratorios as $lab):?>
-					<iframe width="560" height="315" src="<?php echo $lab['video1'];?>" frameborder="0" allowfullscreen></iframe>
+				 <?php foreach($departamentos as $dep):?>
+					<iframe width="560" height="315" src="<?php echo $dep['video2'];?>" frameborder="0" allowfullscreen></iframe>
 				 <?php endforeach;?>
+
 				 <a href="#" data-role="button"  data-theme="b" data-rel="back">Cancelar</a>
 		     </div>
         </div>

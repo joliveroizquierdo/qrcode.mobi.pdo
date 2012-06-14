@@ -31,7 +31,8 @@ $departamentos=$config->getDepartamentosPorId($id);
 			  
 			   <a href="misionD.php?id=<?php echo $dep['id'];?>" data-rel="dialog" data-role="button">Misi&oacute;n</a>
 			   <a href="visionD.php?id=<?php echo $dep['id'];?>" data-rel="dialog" data-role="button">Visi&oacute;n</a>
-			   <a href="videoD.php?id=<?php echo $dep['id'];?>" data-rel="dialog" data-role="button">Recorrido</a>
+			   <a href="videoD.php?id=<?php echo $dep['id'];?>" data-rel="dialog" data-role="button">Entrada Autos</a>
+			   <a href="videoD2.php?id=<?php echo $dep['id'];?>" data-rel="dialog" data-role="button">Entrada Estudiantes</a>
 		       <a href="" data-role="button"  data-theme="b" data-rel="back">Cancelar</a>
 		   </div>
 		</div>

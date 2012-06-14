@@ -24,7 +24,7 @@ $facultades=$config->getFacultadesPorId($id);
 			 </header>
 			 <div data-role="content">
 				 <?php foreach($facultades as $fac):?>
-					<?php //echo $fac['video'];?></p>
+					<iframe width="560" height="315" src="<?php echo $fac['video1'];?>" frameborder="0" allowfullscreen></iframe>
 				 <?php endforeach;?>
 				 <a href="#" data-role="button"  data-theme="b" data-rel="back">Cancelar</a>
 		     </div>

@@ -27,10 +27,10 @@ $dependencias=$config->getDependenciasPorId($id);
 					<p><b>Nombre:</b><?php echo $o['nombre'];?></p>
 					<p><b>Funcion:</b><?php echo $o['funcion'];?></p>
 					<p><b>Ubicaci&oacute;n:</b><?php echo $o['ubicacion'];?></p>
-
 			   <?php endforeach;?>
 			
-			   <a href="videoO.php?id=<?php echo $o['id'];?>" data-rel="dialog" data-role="button">Recorrido</a>
+			   <a href="videoO.php?id=<?php echo $o['id'];?>" data-rel="dialog" data-role="button">Entrada Autos</a>
+			   <a href="videoO.php?id=<?php echo $o['id'];?>" data-rel="dialog" data-role="button">Entrada Estudiantes</a>
 		       <a href="" data-role="button"  data-theme="b" data-rel="back">Cancelar</a>
 		   </div>
 		</div>

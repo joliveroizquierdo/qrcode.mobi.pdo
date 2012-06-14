@@ -65,7 +65,7 @@ class Config{
 			$this->_redirect();
 		}
 		self::set_names();
-		$stm=$this->pdo->prepare("SELECT id,nombre,decano,ubicacion,mision,vision FROM faculties WHERE id='".$id."'");
+		$stm=$this->pdo->prepare("SELECT id,nombre,decano,ubicacion,mision,vision,video1,video2 FROM faculties WHERE id='".$id."'");
 										
 		$stm->execute();
 
@@ -108,7 +108,7 @@ class Config{
 			$this->_redirect();
 		}
 		self::set_names();
-		$stm=$this->pdo->prepare("SELECT id,nombre,ubicacion,mision,vision FROM departments WHERE id='".$id."'");
+		$stm=$this->pdo->prepare("SELECT id,nombre,ubicacion,mision,vision,video1,video2 FROM departments WHERE id='".$id."'");
 										
 		$stm->execute();
 
@@ -152,7 +152,7 @@ class Config{
 		}
 		self::set_names();
 		//$stm=$this->pdo->prepare("SELECT laboratories.id,laboratories.nombre,laboratories.ubicacion,laboratories.department_id,departments.nombre FROM laboratories,departments WHERE laboratories.id='".$id."' AND laboratories.department_id=departments.id" );
-		$stm=$this->pdo->prepare("SELECT id,nombre,ubicacion,department_id FROM laboratories WHERE id='".$id."'" );
+		$stm=$this->pdo->prepare("SELECT id,nombre,ubicacion,department_id,video1,video2 FROM laboratories WHERE id='".$id."'" );
                                  							
 		$stm->execute();
 
@@ -196,7 +196,7 @@ class Config{
 		}
 		self::set_names();
 		//$stm=$this->pdo->prepare("SELECT laboratories.id,laboratories.nombre,laboratories.ubicacion,laboratories.department_id,departments.nombre FROM laboratories,departments WHERE laboratories.id='".$id."' AND laboratories.department_id=departments.id" );
-		$stm=$this->pdo->prepare("SELECT id,nombre,ubicacion,funcion FROM dependences WHERE id='".$id."'" );
+		$stm=$this->pdo->prepare("SELECT id,nombre,ubicacion,funcion,video1,video2 FROM dependences WHERE id='".$id."'" );
                                  							
 		$stm->execute();
 

@@ -28,10 +28,8 @@ $laboratorios=$config->getLaboratoriosPorId($id);
 					<p><b>Ubicaci&oacute;n:</b><?php echo $lab['ubicacion'];?></p>
 
 			   <?php endforeach;?>
-			  
-			   <!--<a href="misionL.php?id=<?php echo $lab['id'];?>" data-rel="dialog" data-role="button">Misi&oacute;n</a>
-			   <a href="visionL.php?id=<?php echo $lab['id'];?>" data-rel="dialog" data-role="button">Visi&oacute;n</a>-->
-			   <a href="videoL.php?id=<?php echo $lab['id'];?>" data-rel="dialog" data-role="button">Recorrido</a>
+			   <a href="videoL.php?id=<?php echo $lab['id'];?>" data-rel="dialog" data-role="button">Entrada Autos</a>
+			   <a href="videoL.php?id=<?php echo $lab['id'];?>" data-rel="dialog" data-role="button">Entrada Estudiantes</a>
 		       <a href="" data-role="button"  data-theme="b" data-rel="back">Cancelar</a>
 		   </div>
 		</div>

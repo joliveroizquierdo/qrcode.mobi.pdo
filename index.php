@@ -48,7 +48,7 @@
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" class="ui-btn-active ui-state-persist" data-iconpos="top" data-icon="home">Inicio</a></li>
-					<li><a href="#Buscar" data-iconpos="top"  data-icon="grid">Buscar</a></li>
+					<!--<li><a href="#Buscar" data-iconpos="top"  data-icon="grid">Buscar</a></li>-->
 				</ul>
 			</div>
 		   </footer>

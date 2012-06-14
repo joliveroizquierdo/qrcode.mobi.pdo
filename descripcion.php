@@ -32,7 +32,8 @@ $facultades=$config->getFacultadesPorId($id);
 			  
 			   <a href="mision.php?id=<?php echo $fac['id'];?>" data-rel="dialog" data-role="button">Misi&oacute;n</a>
 			   <a href="vision.php?id=<?php echo $fac['id'];?>" data-rel="dialog" data-role="button">Visi&oacute;n</a>
-			   <a href="video.php?id=<?php echo $fac['id'];?>" data-rel="dialog" data-role="button">Recorrido</a>
+			   <a href="video.php?id=<?php echo $fac['id'];?>" data-rel="dialog" data-role="button">Entrada Autos</a>
+			   <a href="video2.php?id=<?php echo $fac['id'];?>" data-rel="dialog" data-role="button">Entrada Estudiantes</a>
 		       <a href="" data-role="button"  data-theme="b" data-rel="back">Cancelar</a>
 		   </div>
 		</div>
