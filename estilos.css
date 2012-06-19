@@ -32,7 +32,7 @@ header h1, h2{
 	color:#fff; 
 }
 header #logo{
-	background-image: url(images/logo.png) !important;
+	background-image: url() !important;
 	background-repeat:no-repeat !important;	
 	background-size:30px 30px !important;
 }

@@ -25,8 +25,8 @@ $departamentos=$config->getDepartamentosPorId($id);
 			 <div data-role="content">
 				 <?php foreach($departamentos as $dep):?>
 					<iframe width="560" height="315" src="<?php echo $dep['video2'];?>" frameborder="0" allowfullscreen></iframe>
+					<!--<a href="<?php echo $dep['video2'];?>" data-role="button"  data-theme="b">Recorrido</a>-->
 				 <?php endforeach;?>
-
 				 <a href="#" data-role="button"  data-theme="b" data-rel="back">Cancelar</a>
 		     </div>
         </div>

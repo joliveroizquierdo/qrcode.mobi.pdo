@@ -33,6 +33,8 @@ $departamentos=$config->getDepartamentosPorId($id);
 			   <a href="visionD.php?id=<?php echo $dep['id'];?>" data-rel="dialog" data-role="button">Visi&oacute;n</a>
 			   <a href="videoD.php?id=<?php echo $dep['id'];?>" data-rel="dialog" data-role="button">Entrada Autos</a>
 			   <a href="videoD2.php?id=<?php echo $dep['id'];?>" data-rel="dialog" data-role="button">Entrada Estudiantes</a>
+			   <a href="<?php echo $dep['video1'];?>" data-rel="dialog" data-role="button">Entrada Autos href</a>
+			   <a href="<?php echo $dep['video2'];?>" data-rel="dialog" data-role="button">Entrada Estudiantes href</a>
 		       <a href="" data-role="button"  data-theme="b" data-rel="back">Cancelar</a>
 		   </div>
 		</div>

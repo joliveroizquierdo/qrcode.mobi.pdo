@@ -31,6 +31,8 @@ $dependencias=$config->getDependenciasPorId($id);
 			
 			   <a href="videoO.php?id=<?php echo $o['id'];?>" data-rel="dialog" data-role="button">Entrada Autos</a>
 			   <a href="videoO.php?id=<?php echo $o['id'];?>" data-rel="dialog" data-role="button">Entrada Estudiantes</a>
+			   <a href="<?php echo $o['video1'];?>" data-rel="dialog" data-role="button">Entrada Autos href</a>
+			   <a href="<?php echo $o['video2'];?>" data-rel="dialog" data-role="button">Entrada Estudiantes href</a>
 		       <a href="" data-role="button"  data-theme="b" data-rel="back">Cancelar</a>
 		   </div>
 		</div>
